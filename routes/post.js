@@ -25,11 +25,11 @@ router.delete('/posts/:id', passport.authenticate('jwt', { session: false }), de
 
 
 // Get posts using latitude and longitude
-router.get('/posts/nearby', passport.authenticate('jwt', { session: false }), getPostsByLatLong);
+router.get('/getPostsByLatLong', passport.authenticate('jwt', { session: false }), getPostsByLatLong);
  
 
 // Get count of active and inactive posts
-router.get('/getCountofPosts', passport.authenticate('jwt', { session: false }), getCountofPosts);
+router.get('/noOfPosts', passport.authenticate('jwt', { session: false }), getCountofPosts);
   
 
 
